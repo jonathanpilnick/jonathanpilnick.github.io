@@ -34,11 +34,13 @@
       <a class="read-more" href="about.html">Read more <span class="arrow">↗</span></a>
     </div>
 
-    <!-- To use your own photo: upload a cut-out photo (transparent background) named portrait.png -->
+    <!-- Photo: portrait.png (cut-out with a transparent background) -->
     <div class="hero-portrait">
       <div class="circle pop"></div>
-      <img class="rise" style="--i:3" src="portrait.png" alt="Portrait of Jonathan Pilnick"
-           onerror="this.onerror=null;this.src='portrait-placeholder.svg'">
+      <div class="cutout rise" style="--i:3">
+        <img src="portrait.png" alt="Portrait of Jonathan Pilnick" width="960" height="1069"
+             onerror="this.onerror=null;this.src='portrait-placeholder.svg'">
+      </div>
     </div>
 
     <div class="hero-name-wrap">
