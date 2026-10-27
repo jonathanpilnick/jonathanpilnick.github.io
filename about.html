@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Jonathan Pilnick</title>
+  <meta name="description" content="About Jonathan Pilnick.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="Home">jp<span class="dot">.</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="about.html" aria-current="page">About me</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <span class="spacer"></span>
+  </header>
+
+  <main class="page about">
+    <span class="eyebrow rise">About me</span>
+    <h1 class="display rise" style="--i:1">Jonathan Pilnick<span class="dot">.</span></h1>
+
+    <div class="about-grid">
+      <figure class="about-photo rise" style="--i:2">
+        <!-- Uses the same portrait.png as the home page -->
+        <img src="portrait.png" alt="Portrait of Jonathan Pilnick"
+             onerror="this.onerror=null;this.src='portrait-placeholder.svg'">
+      </figure>
+
+      <!-- EDIT: your story. Each paragraph starts with a bold lead-in. -->
+      <div class="about-text rise" style="--i:3">
+        <p class="lead">Your opening statement — one or two sentences that capture who you are and what you care about.</p>
+
+        <p><strong>What I do now.</strong> Describe your current role or focus: where you work, what you build, and the kind of problems you like to sink your teeth into.</p>
+
+        <p><strong>How I got here.</strong> A few sentences on your background — studies, earlier roles, the turning points that shaped how you work today.</p>
+
+        <p><strong>What drives me.</strong> The ideas, values or questions that keep pulling you back. This is the part that makes the page sound like you.</p>
+
+        <p><strong>Outside of work.</strong> Hobbies, side quests, sports, places — the small details people remember after reading.</p>
+
+        <div class="about-cta">
+          <a class="btn" href="contact.html">Get in touch <span class="arrow">↗</span></a>
+          <a class="btn ghost" href="projects.html">See my projects</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer narrow">
+    <div class="inner">
+      <span data-text="location">City, Country</span>
+      <a data-href="email" data-text="email" href="#">your.email@example.com</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

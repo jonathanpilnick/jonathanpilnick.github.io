@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Jonathan Pilnick</title>
+  <meta name="description" content="Get in touch with Jonathan Pilnick.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="Home">jp<span class="dot">.</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="about.html">About me</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <span class="spacer"></span>
+  </header>
+
+  <main class="page">
+    <div class="page-head">
+      <span class="eyebrow rise">Contact</span>
+      <h1 class="display rise" style="--i:1">Let’s Talk<span class="dot">.</span></h1>
+      <p class="sub rise" style="--i:2">Have an idea, an opportunity, or just want to say hello? My inbox is always open.</p>
+    </div>
+
+    <div class="contact-actions rise" style="--i:3">
+      <!-- This button opens the visitor's email app. The address is set in main.js -->
+      <a class="btn big" data-href="email" href="#">Email me <span class="arrow">↗</span></a>
+      <p class="hint">
+        <span data-text="email">your.email@example.com</span>
+        <button class="copy-btn" type="button" data-copy-email>Copy address</button>
+      </p>
+    </div>
+
+    <ul class="contact-list rise" style="--i:4">
+      <li><a data-href="email" href="#"><span class="eyebrow">Email</span><span class="value" data-text="email">your.email@example.com</span></a></li>
+      <li><a data-href="linkedin" href="#"><span class="eyebrow">LinkedIn</span><span class="value">Connect <span class="arrow">↗</span></span></a></li>
+      <li><a data-href="github" href="#"><span class="eyebrow">GitHub</span><span class="value">Follow <span class="arrow">↗</span></span></a></li>
+      <li><div class="row"><span class="eyebrow">Based in</span><span class="value" data-text="location">City, Country</span></div></li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <span data-text="location">City, Country</span>
+      <a data-href="email" data-text="email" href="#">your.email@example.com</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

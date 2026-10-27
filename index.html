@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jonathan Pilnick</title>
+  <meta name="description" content="Jonathan Pilnick — personal website.">
+  <meta property="og:title" content="Jonathan Pilnick">
+  <meta property="og:description" content="Jonathan Pilnick — personal website.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="Home">jp<span class="dot">.</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="about.html">About me</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <span class="spacer"></span>
+  </header>
+
+  <main class="hero">
+
+    <!-- EDIT: your hook + short intro -->
+    <div class="hero-intro rise" style="--i:2">
+      <p class="lead">A short, memorable line about you goes here.</p>
+      <p>Two or three sentences on what you do and what drives you. Keep it punchy — the About page has room for the full story.</p>
+      <a class="read-more" href="about.html">Read more <span class="arrow">↗</span></a>
+    </div>
+
+    <!-- To use your own photo: upload a cut-out photo (transparent background) named portrait.png -->
+    <div class="hero-portrait">
+      <div class="circle pop"></div>
+      <img class="rise" style="--i:3" src="portrait.png" alt="Portrait of Jonathan Pilnick"
+           onerror="this.onerror=null;this.src='portrait-placeholder.svg'">
+    </div>
+
+    <div class="hero-name-wrap">
+      <h1 class="hero-name rise" style="--i:1">Jonathan<br>Pilnick<span class="dot">.</span></h1>
+    </div>
+
+    <div class="hero-connect rise" style="--i:4">
+      <span class="eyebrow">Connect</span>
+      <div class="links">
+        <a data-href="linkedin" href="#">LinkedIn <span class="arrow">↗</span></a>
+        <a data-href="github" href="#">GitHub <span class="arrow">↗</span></a>
+        <a data-href="email" data-text="email" href="#">your.email@example.com</a>
+      </div>
+    </div>
+
+    <div class="hero-location rise" style="--i:4">
+      <span class="eyebrow">Location</span>
+      <span data-text="location">City, Country</span>
+    </div>
+
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
