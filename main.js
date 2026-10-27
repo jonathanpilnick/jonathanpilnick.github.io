@@ -1,21 +1,23 @@
 /* ==========================================================================
    YOUR DETAILS — edit these once and every page updates.
+   Leave a value empty ("") to hide that link everywhere.
    ========================================================================== */
 const SITE = {
-  email: "your.email@example.com",
-  linkedin: "https://www.linkedin.com/in/your-profile/",
-  github: "https://github.com/jonathanpilnick",
-  location: "City, Country",
+  email: "jpilnick-rnd@igifted.com",
+  linkedin: "",   // paste your LinkedIn URL here, e.g. "https://www.linkedin.com/in/your-name/"
+  location: "International / Israel",
 };
 
 /* ========================================================================== */
 
 (function () {
-  // Links: <a data-href="email|linkedin|github">
+  // Links: <a data-href="email|linkedin">
   document.querySelectorAll("[data-href]").forEach(function (el) {
     var key = el.getAttribute("data-href");
     var value = SITE[key];
-    if (!value) return;
+    var box = el.closest("[data-optional]") || el;
+    if (!value) { box.hidden = true; return; }
+    box.hidden = false;
     el.setAttribute("href", key === "email" ? "mailto:" + value : value);
     if (key !== "email") {
       el.setAttribute("target", "_blank");
@@ -23,17 +25,9 @@ const SITE = {
     }
   });
 
-  // Text: <span data-text="email|location|linkedin-handle">
+  // Text: <span data-text="email|location">
   document.querySelectorAll("[data-text]").forEach(function (el) {
-    var key = el.getAttribute("data-text");
-    var value;
-    if (key === "linkedin-handle") {
-      value = SITE.linkedin.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
-    } else if (key === "github-handle") {
-      value = SITE.github.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
-    } else {
-      value = SITE[key];
-    }
+    var value = SITE[el.getAttribute("data-text")];
     if (value) el.textContent = value;
   });
 

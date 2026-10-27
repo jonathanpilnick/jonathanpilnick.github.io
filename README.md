@@ -8,7 +8,7 @@ Plain HTML/CSS — no build step. Every change you commit to `main` goes live wi
 
 | What | Where |
 |---|---|
-| Email, LinkedIn, GitHub, location (all pages) | `main.js` — the `SITE` block at the top |
+| Email, LinkedIn, location (all pages) — leave LinkedIn empty to hide it | `main.js` — the `SITE` block at the top |
 | Home page hook + short intro | `index.html` — look for `EDIT` |
 | About page story | `about.html` — look for `EDIT` |
 | Projects (title, text, tags, link) | `projects.html` — one `<article>` per project; copy a block to add more |
