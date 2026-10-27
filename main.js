@@ -4,7 +4,7 @@
    ========================================================================== */
 const SITE = {
   email: "jpilnick-rnd@igifted.com",
-  linkedin: "",   // paste your LinkedIn URL here, e.g. "https://www.linkedin.com/in/your-name/"
+  linkedin: "https://www.linkedin.com/in/jonathan-pilnick/",
   location: "International / Israel",
 };
 
