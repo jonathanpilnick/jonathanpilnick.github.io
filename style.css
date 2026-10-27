@@ -169,7 +169,7 @@ a:hover .arrow { transform: translate(2px, -2px); }
   width: calc(var(--d) * var(--img-k, 1.02));
   max-width: none;
   height: auto;
-  filter: grayscale(1) contrast(1.06);   /* remove this line for a colour photo */
+  /* for a black-and-white photo add:  filter: grayscale(1) contrast(1.06); */
 }
 
 .hero-name-wrap { grid-area: name; align-self: center; container-type: inline-size; }
@@ -226,7 +226,7 @@ a:hover .arrow { transform: translate(2px, -2px); }
   background: linear-gradient(180deg, #d6d4cf, #bdbab4);
   overflow: hidden;
 }
-.about-photo img { width: 100%; height: 100%; object-fit: contain; object-position: center bottom; filter: grayscale(1) contrast(1.06); }
+.about-photo img { width: 100%; height: 100%; object-fit: contain; object-position: center bottom; }
 .about-text .lead {
   font-family: var(--font-display);
   font-weight: 700;
