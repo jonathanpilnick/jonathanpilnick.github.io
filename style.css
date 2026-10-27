@@ -301,6 +301,17 @@ a:hover .arrow { transform: translate(2px, -2px); }
   letter-spacing: .1em;
   text-transform: uppercase;
 }
+.project-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: -8px 0 14px; }
+.project-head h2 { margin-bottom: 0; }
+.seal {
+  flex: none;
+  width: clamp(92px, 9vw, 118px);
+  height: auto;
+  transform: rotate(-8deg);
+  filter: drop-shadow(0 6px 10px rgba(90, 60, 10, .18));
+  transition: transform .4s var(--ease);
+}
+.project:hover .seal { transform: rotate(0deg) scale(1.04); }
 .sub-projects { list-style: none; margin-top: 22px; border-top: 1px solid var(--line); }
 .sub-projects li { padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 14.5px; color: var(--ink-2); }
 .sub-projects strong { color: var(--ink); font-weight: 700; }
