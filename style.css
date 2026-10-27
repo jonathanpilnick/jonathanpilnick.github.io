@@ -267,7 +267,7 @@ a:hover .arrow { transform: translate(2px, -2px); }
 .btn.big:hover { background: var(--ink); border-color: var(--ink); }
 
 /* ---------- Projects ---------- */
-.projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.projects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
 .project {
   display: flex; flex-direction: column;
   background: var(--surface);
@@ -282,7 +282,7 @@ a:hover .arrow { transform: translate(2px, -2px); }
 .project h2 {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(24px, 2.6vw, 32px);
+  font-size: clamp(24px, 2.2vw, 29px);
   line-height: 1.08;
   letter-spacing: -.035em;
   margin-bottom: 12px;
@@ -301,17 +301,48 @@ a:hover .arrow { transform: translate(2px, -2px); }
   letter-spacing: .1em;
   text-transform: uppercase;
 }
-.project-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: -8px 0 14px; }
-.project-head h2 { margin-bottom: 0; }
-.seal {
-  flex: none;
-  width: clamp(92px, 9vw, 118px);
-  height: auto;
-  transform: rotate(-8deg);
-  filter: drop-shadow(0 6px 10px rgba(90, 60, 10, .18));
-  transition: transform .4s var(--ease);
+.project-meta { text-align: right; white-space: nowrap; }
+.project p.role, .project.featured p.role {
+  margin: -4px 0 14px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
 }
-.project:hover .seal { transform: rotate(0deg) scale(1.04); }
+.projects .project:not(.featured) { padding: clamp(24px, 2.6vw, 34px); }
+.project.featured { padding: clamp(24px, 3.4vw, 44px); }
+
+/* Featured project: full width, with the patent seal in its own column */
+.project.featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: clamp(32px, 6vw, 96px);
+  background:
+    radial-gradient(circle at calc(100% - clamp(110px, 12vw, 160px)) 50%, rgba(196, 150, 60, .13), transparent clamp(140px, 16vw, 220px)),
+    var(--surface);
+}
+.featured-body { display: flex; flex-direction: column; min-width: 0; }
+.project.featured h2 { font-size: clamp(32px, 4vw, 48px); margin-bottom: 14px; }
+.project.featured p { font-size: 16px; max-width: 640px; }
+.featured-seal { display: flex; flex-direction: column; align-items: center; gap: 14px; padding-right: clamp(0px, 2vw, 24px); }
+.seal {
+  display: block;
+  width: clamp(150px, 15vw, 196px);
+  height: auto;
+  transform: rotate(-6deg);
+  transition: transform .5s var(--ease);
+}
+.project:hover .seal { transform: rotate(0deg) scale(1.03); }
+.featured-seal figcaption {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: #8a6a2c;
+}
 .sub-projects { list-style: none; margin-top: 22px; border-top: 1px solid var(--line); }
 .sub-projects li { padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 14.5px; color: var(--ink-2); }
 .sub-projects strong { color: var(--ink); font-weight: 700; }
@@ -383,6 +414,14 @@ a:hover .arrow { transform: translate(2px, -2px); }
 }
 
 /* ---------- Responsive ---------- */
+@media (max-width: 1060px) {
+  .projects { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .project.featured { grid-template-columns: 1fr; background: var(--surface); }
+  .featured-seal { order: -1; flex-direction: row; justify-content: flex-start; gap: 16px; padding: 0; margin-bottom: 22px; }
+  .seal { width: 104px; }
+}
 @media (max-width: 900px) {
   .site-header { grid-template-columns: auto 1fr; padding-top: 20px; padding-bottom: 20px; }
   .site-header .spacer { display: none; }
