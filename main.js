@@ -3,7 +3,7 @@
    Leave a value empty ("") to hide that link everywhere.
    ========================================================================== */
 const SITE = {
-  email: "jpilnick-rnd@igifted.com",
+  email: "theopjp@gmail.com",
   linkedin: "https://www.linkedin.com/in/jonathan-pilnick/",
   location: "International / Israel",
 };
