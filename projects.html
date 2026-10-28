@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects — Jonathan Pilnick</title>
-  <meta name="description" content="Projects by Jonathan Pilnick: AI research, algorithmic trading, the Thrive productivity app and defense tech innovation.">
+  <meta name="description" content="Projects by Jonathan Pilnick">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,65 +31,92 @@
     </div>
 
     <!-- EDIT: one <article> per project. Copy a block to add more.
-         To list sub-projects under a project, paste this inside its <article> (after the <p>):
-         <ul class="sub-projects">
-           <li><strong>Sub-project name.</strong> One line on what you did.</li>
-         </ul>
+         Left side: number, years, badge (optional), title, role, description, tags.
+         Right side: "What I did" — one <li> per sub-project.
     -->
     <section class="projects">
 
-      <!-- Featured project: spans the full width, with the patent seal on the right -->
       <article class="project featured rise" style="--i:3">
-        <div class="featured-body">
-          <div class="project-top">
-            <span class="num">01</span>
-            <span class="project-meta">2023–Now</span>
-          </div>
-          <h2>AI Research</h2>
+        <div class="project-main">
+          <div class="project-top"><span class="num">01</span><span class="project-meta">2023–Now</span></div>
+          <figure class="seal-row">
+            <img class="seal" src="patent-pending.png" alt="Patent pending" width="240" height="207">
+            <figcaption>USPTO · Patent pending</figcaption>
+          </figure>
+          <h2>Independent AI Research</h2>
           <p class="role">Researcher</p>
-          <p>Developing novel AI reasoning frameworks — mathematical structures that strengthen how models reason while keeping them aligned and safe. Mentored by two university professors, with feedback from Tel Aviv University and University of Edinburgh faculty. A provisional US patent has been filed.</p>
+          <p class="desc">Developing novel AI reasoning frameworks — the motivation is to make future AI more interpretable, reliable, traceable and aligned by better representing its internal reasoning signals within the neural network. The framework’s output strengthens our understanding of how models reason, enabling better detection of model traits such as hallucinations and misalignment. A provisional US patent has been filed.</p>
           <ul class="tags"><li>AI Reasoning</li><li>Interpretability</li><li>Alignment &amp; Safety</li></ul>
         </div>
-        <figure class="featured-seal">
-          <img class="seal" src="patent-pending.png" alt="Patent pending" width="240" height="207">
-          <figcaption>USPTO · Patent pending</figcaption>
-        </figure>
+        <div class="project-detail">
+          <h3 class="detail-label">What I did</h3>
+          <ol class="sub-projects">
+            <li>Trained neural networks with custom architectures from scratch and fitted them to the objective</li>
+            <li>Created many synthetic datasets that enable new model capabilities, and built benchmarks to measure them</li>
+            <li>Created novel data-processing pipelines</li>
+            <li>Independently wrote my full USPTO patent — from learning patent law and practice to writing the patent and creating the diagrams — then negotiated with and hired a patent lawyer to review it before submission</li>
+            <li>Researched the existing landscape, using insights from other great researchers to improve my invention</li>
+            <li>Worked alongside Dr. Moshe Butman and Dr. Hila Naaman as part of the “Top of Class” program during my B.Sc., and consulted with professors in Israel and abroad</li>
+          </ol>
+        </div>
       </article>
 
       <article class="project rise" style="--i:4">
-        <div class="project-top">
-          <span class="num">02</span>
-          <span class="project-meta">2020–Now</span>
+        <div class="project-main">
+          <div class="project-top"><span class="num">02</span><span class="project-meta">2020–Now</span></div>
+          <span class="badge">5+ years of research</span>
+          <h2>Automated Algorithmic Trading System</h2>
+          <p class="role">Co-Founder &amp; Principal Researcher</p>
+          <p class="desc">Original market theories on complex-system dynamics, turned into proprietary automated trading systems that combine deep learning, reinforcement learning and statistical models to solve multi-objective optimization in fast-moving markets.</p>
+          <ul class="tags"><li>Deep Learning</li><li>Reinforcement Learning</li><li>Statistical Modeling</li></ul>
         </div>
-        <span class="badge">5+ years of research</span>
-        <h2>Automated Algorithmic Trading System</h2>
-        <p class="role">Co-Founder &amp; Principal Researcher</p>
-        <p>Original market theories on complex-system dynamics, turned into proprietary automated trading systems that combine deep learning, reinforcement learning and statistical models to solve multi-objective optimization in fast-moving markets.</p>
-        <ul class="tags"><li>Deep Learning</li><li>Reinforcement Learning</li><li>Statistical Modeling</li></ul>
+        <div class="project-detail">
+          <h3 class="detail-label">What I did</h3>
+          <ol class="sub-projects">
+            <li>Trained neural networks from scratch to predict certain market metadata</li>
+            <li>Used biologically inspired genetic algorithms that iterated over proposed algorithms, selecting the top performers to generate new algorithms inspired by them</li>
+            <li>Did deep research on market dynamics and developed novel insights into the statistics and probability theory behind them, writing several proprietary papers that became the basis of our strategies</li>
+            <li>Built systems for big-data processing, statistical analysis and simulation</li>
+            <li>Moved from a simulated environment to production, running extensive tests to keep the sim-to-real gap minimal</li>
+            <li>Researched many markets — from stocks, futures and forex to crypto</li>
+          </ol>
+        </div>
       </article>
 
       <article class="project rise" style="--i:5">
-        <div class="project-top">
-          <span class="num">03</span>
-          <span class="project-meta">2019–Now</span>
+        <div class="project-main">
+          <div class="project-top"><span class="num">03</span><span class="project-meta">2019–Now</span></div>
+          <span class="badge">150K+ users</span>
+          <h2>Thrive Productivity App</h2>
+          <p class="role">Founder &amp; Developer</p>
+          <p class="desc">Founded and scaled a productivity app called <a href="https://thrive-app.info/" target="_blank" rel="noopener">Thrive</a> end to end, reaching 150,000+ users worldwide.</p>
+          <ul class="tags"><li>Mobile (Dart)</li><li>Scheduling Algorithms</li><li>Product Design</li></ul>
         </div>
-        <span class="badge">150K+ users</span>
-        <h2>Thrive Productivity App</h2>
-        <p class="role">Founder &amp; Developer</p>
-        <p>It started as Smart Study, a time-management app I designed and built end to end that reached 150,000+ users worldwide. Today it’s growing into Thrive — an AI scheduling app that builds your plan with dynamic algorithmic optimization.</p>
-        <ul class="tags"><li>Mobile (Dart)</li><li>Scheduling Algorithms</li><li>Product Design</li></ul>
+        <div class="project-detail">
+          <h3 class="detail-label">What I did</h3>
+          <ol class="sub-projects">
+            <li>Organically scaled the product from 0 to more than 150k downloads by grinding hard and learning along the way — from reaching out to reporters and lecturing in middle and high schools, to marketing on social platforms, optimizing the website and app store listing, and much more</li>
+            <li>Developed the product from scratch (well before AI) — from learning how to program to building an MVP, running a beta group, launching the app and managing everything that comes with it</li>
+          </ol>
+        </div>
       </article>
 
       <article class="project rise" style="--i:6">
-        <div class="project-top">
-          <span class="num">04</span>
-          <span class="project-meta">2022–2025</span>
+        <div class="project-main">
+          <div class="project-top"><span class="num">04</span><span class="project-meta">2022–2025</span></div>
+          <h2>Defense Tech</h2>
+          <p class="role">Founder &amp; Team Lead</p>
+          <p class="desc"><a href="https://www.iaf.org.il/9826-62876-he/IAF.aspx" target="_blank" rel="noopener">Founded first-of-their-kind AI systems</a> with the Israeli Air Force’s elite AI unit, approved at senior levels and setting precedents for future AI development. Led a cross-domain team in the IAF accelerator program and built strategic relationships with international defense partners.</p>
+          <ul class="tags"><li>Applied AI</li><li>Innovation Leadership</li><li>International Partnerships</li></ul>
         </div>
-        <span class="badge">IDF · Israeli Air Force</span>
-        <h2>Defense Tech Founder &amp; Innovator</h2>
-        <p class="role">Founder &amp; Team Lead</p>
-        <p>Founded first-of-their-kind AI systems with the Israeli Air Force’s elite AI unit, approved at senior levels and setting precedents for future AI development. Led a cross-domain team in the IAF accelerator program and built strategic relationships with international defense partners.</p>
-        <ul class="tags"><li>Applied AI</li><li>Innovation Leadership</li><li>International Partnerships</li></ul>
+        <div class="project-detail">
+          <h3 class="detail-label">What I did</h3>
+          <ol class="sub-projects">
+            <li>Founded a first-of-its-kind system called “Diplomat” — at the time, one of the first instances of AI being integrated into the organization. It received top-level approval, as described in this <a href="https://www.iaf.org.il/9826-62876-he/IAF.aspx" target="_blank" rel="noopener">official post</a></li>
+            <li>Founded an innovative system called “Messer” together with three friends — we built the system together and received top-level approvals</li>
+            <li>Team lead in a defense-tech accelerator: my team interviewed dozens of people to understand a complex problem, built a proof of concept, and pitched it to senior officials — winning approval and funding</li>
+          </ol>
+        </div>
       </article>
 
     </section>
